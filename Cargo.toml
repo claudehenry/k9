@@ -1,0 +1,20 @@
+[package]
+name = "k9"
+version = "0.0.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+http = "0.2.9"
+lazy_static = "1.4.0"
+log = "0.4.18"
+reqwest = { version = "0.11.18", features = ["json"] }
+serde = { version = "1.0.163", features = ["serde_derive"] }
+thiserror = "1.0.40"
+
+[dev-dependencies]
+futures = "0.3.28"
+pretty_env_logger = "*"
+tokio = { version = "*", features = ["full"] }
+rand = "0.8.5"
